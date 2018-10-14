@@ -6,10 +6,10 @@ package atributoestatico;
  * @author Yova
  */
 public class Club {
-    
+
+   
     private String nombre;
     private String apellido;
-    /* utilizando static para que se visibles */
     private static int contador = 0;
     
     public Club(String nom, String ape){
@@ -18,5 +18,18 @@ public class Club {
        contador++;
        System.out.printf("constructor para %s %s hay %d\n", nombre, apellido, contador);
     }
+    
+     public String getNombre() {
+        return nombre;
+    }
+
+    public String getApellido() {
+        return apellido;
+    }
+
+    public static int getContador() {
+        return contador;
+    }
+    
     
 }
